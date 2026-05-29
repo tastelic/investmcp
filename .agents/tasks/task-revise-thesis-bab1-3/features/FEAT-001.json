@@ -1,0 +1,45 @@
+{
+  "id": "FEAT-001",
+  "type": "fix",
+  "description": "Comprehensive revision of 'Skripsi REAL.md' to: (1) add PMA and total investment as dependent variables alongside PMDN, (2) restructure models from 5 to 4, (3) completely remove all BPK/temuan BPK/dual governance MCP-BPK references, (4) replace bottom 4 references in penelitian terdahulu table with more relevant papers from the repository, (5) update rumusan masalah, tujuan, ruang lingkup, and manfaat to reflect the new design, (6) ensure all citations come from repository papers.",
+  "status": "completed",
+  "steps": [
+    "Read the full current file /projects/sandbox/investmcp/Skripsi REAL.md to understand exact structure",
+    "Read reference papers for replacement citations: /projects/sandbox/investmcp/fpos-7-1630368.md (Yuwono et al. 2025 - governance/FDI/structural break), /projects/sandbox/investmcp/PMF_2024_02_Aswan.md (Aswan et al. 2024 - regional investments PMDN vs PMA), /projects/sandbox/investmcp/1-s2.0-S2405844019363091-main.md (Alfada 2019 - corruption threshold/investment), /projects/sandbox/investmcp/ssrn-4376227.md (Haptari et al. 2022 - fiscal decentralization/FDI)",
+    "BAB I REVISION: Rewrite latar belakang to frame 3 dependent variables (total investasi, PMDN, PMA). Remove all BPK/dual governance references. Keep MCP decomposition as the main novelty. Update celah penelitian to emphasize: (a) no decomposition of MCP components yet, (b) no study on both PMA and PMDN responses to MCP at kab/kota level, (c) structural break from 'Perizinan' to 'Pelayanan Publik'. Citation sources: Tua & Mahi 2022, Almakkiyah 2026, Hermawan 2025 (for PMDN context), Farhan et al. 2025 (for decentralization/governance), Aswan et al. 2024 (for PMDN vs PMA distinction), Yuwono et al. 2025 (for regulatory governance impact on FDI)",
+    "BAB I - Rumusan Masalah: Revise to 2 questions: (1) Komponen MCP mana yang berpengaruh signifikan terhadap investasi PMDN dan PMA di kab/kota Jawa Tengah 2023-2025? (2) Apakah perubahan kerangka indikator MCP dari Perizinan menjadi Pelayanan Publik menghasilkan pengaruh yang berbeda terhadap investasi?",
+    "BAB I - Tujuan: Match with new rumusan masalah (2 tujuan). Remove BPK objective entirely.",
+    "BAB I - Ruang Lingkup: Update to list 3 dependent variables (log total investasi, log PMDN, log PMA), 7 MCP components as independent, log penduduk as control, dummy d_post2024. Remove BPK from scope. Mention 4 models.",
+    "BAB I - Manfaat: Remove dual governance MCP-BPK contribution. Keep dekomposisi MCP methodology contribution. Add contribution of comparing PMA vs PMDN responses to governance quality.",
+    "BAB II REVISION - Teori: Keep Agency Theory (2.1.1), Institutional Theory (2.1.2), New Institutional Economics/Transaction Cost (2.1.3), Theory of the Firm (2.1.4), Grease/Sand the Wheel (2.1.5), Structural Break (2.1.6). Remove all BPK audit references from within theories. In Agency Theory, reframe MCP as the sole monitoring mechanism (remove BPK as complementary monitor). In each theory section, remove sentences about temuan BPK, dual governance, or paradoks transparansi.",
+    "BAB II - Konsep Variabel: Add subsection 2.2.1 for 'Investasi (Total, PMDN, PMA)' explaining all three dependent variables with citations from Aswan et al. 2024, Hermawan 2025, Tua & Mahi 2022. Remove old 2.2.1 that only covered PMDN. Keep 2.2.2 MCP, 2.2.3 Tujuh Komponen MCP, 2.2.4 Variabel Kontrol mostly unchanged. Remove any BPK variable subsection.",
+    "BAB II - Penelitian Terdahulu Table: Keep top 3 (Tua & Mahi 2022, Almakkiyah 2026, Linda et al. 2024). Replace bottom 4 (Briwantara 2018, Hermawan 2025, Kristanto et al. 2026, Christianingrum 2023) with: (4) Yuwono, Wiryawan & Yuzuru (2025) - 'The effect of regulatory governance system on investment growth in decentralized Indonesia' - uses diff-in-diff showing provinces with weaker governance lost 26-30% FDI growth; (5) Aswan, Sabbar, Bashir & Dewi (2024) - 'Linking regional investments and revenues' - found PMDN at provincial level affects investment loans while PMA did not; (6) Alfada (2019) - 'The destructive effect of corruption on economic growth in Indonesia: A threshold model' - found corruption threshold, nonlinear relationship; (7) Haptari, Soedaryono, Sofilda & Siallagan (2022) - 'Impact of fiscal decentralization policy on FDI in Indonesia' - found fiscal decentralization positively affects FDI via infrastructure and governance. Update Persamaan/Perbedaan columns accordingly.",
+    "BAB III REVISION - Model: Restructure from 5 models to 4 models: Model 1 (Baseline/Umum): log(TOTAL_INVESTit + 1) = alpha + beta1*mcp_perangit + beta2*mcp_izinit + beta3*mcp_pbjit + beta4*mcp_apipit + beta5*mcp_masnit + beta6*mcp_opdit + beta7*mcp_masetit + gamma*log(PENDUDUKit) + epsilon_it. Model 2 (Structural Break/Dummy): log(TOTAL_INVESTit + 1) = alpha + beta1*mcp_izinit + beta2*D_POST2024t + beta3*(mcp_izinit x D_POST2024t) + gamma*log(PENDUDUKit) + epsilon_it. Model 3 (PMDN saja): log(PMDNit + 1) = alpha + beta1*mcp_perangit + ... + beta7*mcp_masetit + gamma*log(PENDUDUKit) + epsilon_it. Model 4 (PMA saja): log(PMAit + 1) = alpha + beta1*mcp_perangit + ... + beta7*mcp_masetit + gamma*log(PENDUDUKit) + epsilon_it.",
+    "BAB III - Definisi Operasional Variabel Table: Update to show 3 dependent variables: TOTAL_INVEST = log(realisasi investasi total PMA+PMDN + 1), INVEST_PMDN = log(realisasi PMDN + 1), INVEST_PMA = log(realisasi PMA + 1). Remove all BPK variables (TOT_TEMUAN, TEM_SPI, TEM_KEP). Keep 7 MCP components, log penduduk, D_POST2024.",
+    "BAB III - Sumber Data Table: Remove BPK row. Add separate rows or notes for PMA and PMDN data sources (both from BPS/DPMPTSP).",
+    "BAB III - Teknik Analisis: Keep sections on statistik deskriptif, pemilihan model panel (Chow/Hausman/LM), uji asumsi klasik, pengujian hipotesis, robust SE, and EViews 12. Remove any mention of Model 3 moderasi BPK or Model 5 pemisahan temuan BPK. Update model count references from 5 to 4.",
+    "Final pass: Search and remove any remaining mentions of BPK, temuan BPK, dual governance MCP-BPK, TOT_TEMUAN, TEM_SPI, TEM_KEP throughout the entire document. Ensure coherence across all three chapters."
+  ],
+  "acceptance_criteria": [
+    "File contains exactly 4 model specifications in Bab III (not 5)",
+    "File contains 3 dependent variables: total investasi (PMA+PMDN), PMDN, PMA",
+    "No mention of BPK, temuan BPK, dual governance MCP-BPK, TOT_TEMUAN, TEM_SPI, or TEM_KEP anywhere in the document",
+    "Penelitian terdahulu table has 7 entries with top 3 kept (Tua & Mahi, Almakkiyah, Linda) and bottom 4 replaced (Yuwono et al. 2025, Aswan et al. 2024, Alfada 2019, Haptari et al. 2022)",
+    "Rumusan masalah has exactly 2 questions (MCP components effect on PMDN/PMA, and structural break test)",
+    "All citations reference papers available in the repository",
+    "Document is in formal academic Indonesian (Bahasa Indonesia)",
+    "Model 1 uses total investasi as DV with all 7 MCP components",
+    "Model 2 tests structural break using dummy interaction on total investasi",
+    "Model 3 uses PMDN as DV with all 7 MCP components",
+    "Model 4 uses PMA as DV with all 7 MCP components"
+  ],
+  "verification": [
+    "Read the output file and verify all 4 models are correctly specified",
+    "Grep for 'BPK' or 'temuan' in the file to confirm no BPK references remain",
+    "Verify the penelitian terdahulu table contains 7 entries with correct replacements",
+    "Count rumusan masalah items (should be 2)",
+    "Verify model specifications match: Model 1 = total invest, Model 2 = dummy break, Model 3 = PMDN, Model 4 = PMA"
+  ],
+  "blocked_reason": null,
+  "findings": "Successfully rewrote entire Skripsi REAL.md (356 lines). All acceptance criteria verified: 4 models present, 3 dependent variables (TOTAL_INVEST, INVEST_PMDN, INVEST_PMA), zero BPK/temuan references, 7 penelitian terdahulu entries with correct replacements, exactly 2 rumusan masalah questions. No build/test needed (markdown document)."
+}
