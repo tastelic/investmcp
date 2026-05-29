@@ -2,7 +2,7 @@
   "id": "FEAT-001",
   "type": "fix",
   "description": "Complete revision of Skripsi REAL.md Bab 1-3: (1) Add 2 dependent variables (Total Investasi, PMA) throughout, (2) Remove ALL BPK/dual governance references, (3) Restructure Bab 3 from 5 models to 4 models, (4) Replace bottom 4 prior studies with more relevant ones from repository journals, (5) Evaluate and update theoretical framework, (6) Ensure all citations are traceable to repository journal files",
-  "status": "in_progress",
+  "status": "completed",
   "steps": [
     "Step 1 - Read the full current Skripsi REAL.md to understand the complete structure",
     "Step 2 - BAB I REVISION: (a) Update latar belakang to mention THREE dependent variables: Total Investasi, PMDN, and PMA. Remove all references to BPK moderation and dual governance framework. Keep the narrative about MCP decomposition as the main novelty. Update the research gap paragraph to remove BPK-related gap and instead emphasize: (i) dekomposisi MCP per sub-area, (ii) dekomposisi investasi menjadi PMDN dan PMA, (iii) fokus Jawa Tengah, (iv) structural break 2024. (b) Update Rumusan Masalah to 2 questions only: (1) Komponen MCP mana yang berpengaruh signifikan terhadap investasi PMDN dan PMA di kab/kota Jateng 2023-2025? (2) Apakah perubahan kerangka indikator MCP dari Perizinan (2023) ke Pelayanan Publik (2024-2025) menghasilkan pengaruh berbeda? Remove the BPK moderation question. (c) Update Tujuan Penelitian accordingly (2 objectives matching the 2 questions). (d) Update Ruang Lingkup: change variabel dependen to include log(INVEST_PMA+1) and log(INVEST_PMDN+1), remove BPK as moderator variable, remove BPK data source. (e) Update Manfaat Penelitian: remove point about dual governance MCP-BPK framework, replace with contribution about decomposing investment into PMDN and PMA.",
@@ -26,5 +26,5 @@
     "Read the final Skripsi REAL.md and confirm the prior studies table has 7 rows with the correct studies"
   ],
   "blocked_reason": null,
-  "findings": ""
+  "findings": "Successfully revised complete document. Verification: 0 BPK references, exactly 4 models, exactly 2 Rumusan Masalah items, 7 prior studies in table (3 kept + 4 new), 3 dependent variables defined. File is 353 lines. The word 'temuan' appears 3 times but only in the sense of 'research finding' (temuan Putra et al., Temuan tersebut, Temuan ini), not referring to BPK audit findings."
 }

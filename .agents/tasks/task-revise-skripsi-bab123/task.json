@@ -1,7 +1,7 @@
 {
   "task_id": "task-revise-skripsi-bab123",
   "task_description": "Revise thesis draft Bab 1-3 in Skripsi REAL.md: add 2 dependent variables (Total Investasi, PMA), remove BPK moderation framework, restructure from 5 to 4 models, replace 4 least relevant prior studies with more relevant ones from repository journals, ensure all citations traceable to repository files",
-  "status": "in_progress",
+  "status": "completed",
   "feature_order": ["FEAT-001"],
   "blocked_reason": null
 }
